@@ -32,7 +32,7 @@ import { SettingsComponent } from './settings/settings.component';
     CustomersComponent,
     FinanceComponent,
     ProjectsComponent,
-    SettingsComponent
+    SettingsComponent,
   ],
   imports: [
     BrowserModule,

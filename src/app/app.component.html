@@ -14,7 +14,7 @@
         <i class="fa-solid fa-moon"></i>&nbsp;&nbsp;&nbsp;
         <span>Dark Mode</span>
       </button>
-      <button mat-menu-item >
+      <button mat-menu-item [routerLink]="'/settings'">
         <i class="fa-solid fa-cog"></i>&nbsp;&nbsp;
         <span>Settings</span>
       </button>
@@ -47,20 +47,20 @@
 <mat-sidenav-container class="mat-cont">
   <mat-sidenav #sidenav mode="side" opened="true" class="side-container">
     <mat-nav-list>
-      <a mat-list-item [routerLink]="'/dashboard'" style="color: white;">
-        <i class="fa-sharp fa-solid fa-gauge-high"></i> 
+      <a mat-list-item [routerLink]="'/dashboard'" class="mat-item">
+        <i class="fa-sharp fa-solid fa-gauge-high" style="color: rgb(43, 150, 200);"></i> 
         <span class="mr-3 float-end">Dashboard</span>
       </a>
-      <a mat-list-item [routerLink]="'/projects'" color="white">
-        <i class="fa-sharp fa-solid fa-file-code"></i> 
+      <a mat-list-item [routerLink]="'/projects'" color="white" class="mat-item">
+        <i class="fa-sharp fa-solid fa-file-code" style="color: rgb(126, 21, 255);"></i> 
         <span class="mr-3 float-end">Projects</span>
       </a>
-      <a mat-list-item [routerLink]="'/customers'" color="white">
-        <i class="fa-sharp fa-solid fa-users"></i> 
+      <a mat-list-item [routerLink]="'/customers'" color="white" class="mat-item">
+        <i class="fa-sharp fa-solid fa-users" style="color: rgb(255, 193, 21);"></i> 
         <span class="mr-3 float-end">Customers</span>
       </a>
-      <a mat-list-item [routerLink]="'/finance'" color="white">
-        <i class="fa-sharp fa-solid fa-chart-column"></i>
+      <a mat-list-item [routerLink]="'/finance'" color="white" class="mat-item">
+        <i class="fa-sharp fa-solid fa-chart-column" style="color: rgb(56, 214, 42);"></i>
         <span class="mr-3 float-end">Finance</span>
       </a>
     </mat-nav-list>
